@@ -1,0 +1,45 @@
+# System files
+.bash_history
+.bashrc
+.profile
+.viminfo
+.wget-hsts
+
+# IDE and config
+.vscode-server/
+.claude.json
+.claude/
+.config/
+.copilot/
+
+# Package managers
+.dotnet/
+
+# SSH and Git
+.ssh/
+.gitconfig
+
+# Cache
+.cache/
+.local/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
