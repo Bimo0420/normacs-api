@@ -1,0 +1,5 @@
+# VB Script
+
+## Исходный текст
+
+' Получаем ссылку на объект API Set app = CreateObject("NormaCS.Application") ' Получаем ссылку на объект документа. Set doc = app.GetDocumentByURL("normacs://test.ru/1") ' Ниже считаем, что у этого документа имеется одно или больше приложений. ' Получаем ссылку на объект первого приложения в списке приложений документа. Set apx = doc.Appendixes(1) ' Получаем ссылку на объект редактора NormaCS Pro Set pro = app.domains("test.ru").GetNormaCSPro("1") ' Для следующих операций требуется подписка на дополнительную функцию "AllowUserAttach". ' Обновляем приложение, указывая имя и описание приложения pro.ChangeDocumentAppendix doc, apx, "Приложение1", "Первое приложение" ' Обновляем приложение, указывая имя и описание приложения, путь на основной файл ' и файл предпросмотра. pro.ChangeDocumentAppendix doc, apx, "Приложение1", "Первое приложение", "C:\Temp\test.docx", "C:\Temp\test.pdf" ' Обновляем приложение, указывая, что файл предпросмотра следует удалить pro.ChangeDocumentAppendix doc, apx, , , , ""
